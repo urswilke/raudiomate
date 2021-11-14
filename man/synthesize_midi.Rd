@@ -18,7 +18,7 @@ synthesize_midi(midifile, audiofile, soundfont = NULL, verbose = FALSE)
 \description{
 Generates a wav \code{audiofile} from a \code{midifile} using the \code{soundfont} if specified
 (otherwise fluidsynth's default soundfont is used). Needs fluidsynth
-installed; no idea how this works on windows.
+to be installed.
 }
 \examples{
 \dontrun{
