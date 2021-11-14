@@ -17,4 +17,5 @@ URL: https://github.com/urswilke/raudiomate,
 BugReports: https://github.com/urswilke/raudiomate/issues
 Imports: 
     processx,
-    htmltools
+    htmltools,
+    magrittr
