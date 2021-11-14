@@ -65,7 +65,6 @@ convert_to_mp3 <- function(wav_filename, verbose = FALSE) {
   if (verbose) {
     cat(cmd_res$stderr)
   }
-  message("generated ", mp3_filename)
 }
 
 #' Play midi file
