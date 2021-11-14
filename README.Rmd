@@ -18,6 +18,8 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 [![CRAN status](https://www.r-pkg.org/badges/version/raudiomate)](https://CRAN.R-project.org/package=raudiomate)
+[![Codecov test coverage](https://codecov.io/gh/urswilke/raudiomate/branch/master/graph/badge.svg)](https://app.codecov.io/gh/urswilke/raudiomate?branch=master)
+[![R-CMD-check](https://github.com/urswilke/raudiomate/workflows/R-CMD-check/badge.svg)](https://github.com/urswilke/raudiomate/actions)
 <!-- badges: end -->
 
 The goal of raudiomate is to ...
