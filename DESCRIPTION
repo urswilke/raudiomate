@@ -7,6 +7,8 @@ Description: Transform midi files to wav and mp3 and provide html tags to play t
 License: License: GPL-3 + file LICENSE
 Suggests: 
     covr,
+    knitr,
+    rmarkdown,
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
 Encoding: UTF-8
@@ -21,3 +23,4 @@ Imports:
     magrittr,
     glue,
     withr
+VignetteBuilder: knitr
