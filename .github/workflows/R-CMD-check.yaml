@@ -55,7 +55,8 @@ jobs:
         with:
           extra-packages: rcmdcheck
 
-      - name: Install fluidsynth
+      - name: Install fluidsynth & ffmpeg
         run: sudo apt-get install -y fluidsynth
+        run: sudo apt-get install -y ffmpeg
 
       - uses: r-lib/actions/check-r-package@v1
