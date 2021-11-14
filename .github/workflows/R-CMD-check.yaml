@@ -55,10 +55,33 @@ jobs:
         with:
           extra-packages: rcmdcheck
 
-      - name: Install fluidsynth & ffmpeg
+      - name:  Install fluidsynth & ffmpeg
         run: |
-          sudo apt-get install -y fluidsynth
-          sudo apt-get install -y ffmpeg
+          if [ "$RUNNER_OS" == "Linux" ]; then
+            sudo apt-get install -y fluidsynth
+            sudo apt-get install -y ffmpeg
+          elif [ "$RUNNER_OS" == "macOS" ]; then
+            brew install fluidsynth
+            brew install ffmpeg
+          elif [ "$RUNNER_OS" == "Windows" ]; then
+            choco install fluidsynth
+            choco install ffmpeg
+          else
+            echo "$RUNNER_OS not supported"
+            exit 1
+          fi
+        shell: bash
+
+
+      # - name: Install fluidsynth with homebrew
+      #   run: |
+      #     brew install fluidsynth
+      #     brew install ffmpeg
+      #
+      # - name: Install fluidsynth & ffmpeg
+      #   run: |
+      #     sudo apt-get install -y fluidsynth
+      #     sudo apt-get install -y ffmpeg
 
       - uses: r-lib/actions/check-r-package@v1
 
