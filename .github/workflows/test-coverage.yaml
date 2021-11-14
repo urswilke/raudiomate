@@ -24,6 +24,10 @@ jobs:
       - uses: r-lib/actions/setup-r-dependencies@v1
         with:
           extra-packages: covr
+      - name: Install fluidsynth & ffmpeg
+        run: |
+          sudo apt-get install -y fluidsynth
+          sudo apt-get install -y ffmpeg
 
       - name: Test coverage
         run: covr::codecov()
