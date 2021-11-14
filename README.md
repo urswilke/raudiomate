@@ -30,8 +30,7 @@ Further dependencies:
 
 -   For `synthesize_midi()` to work, you need
     [fluidsynth](https://www.fluidsynth.org/) installed.
--   For `convert_to_mp3()` you need [ffmpeg](https://www.ffmpeg.org/)
-    (installed by default on ubuntu).
+-   For `convert_to_mp3()` you need [ffmpeg](https://www.ffmpeg.org/).
 
 ## Example
 
