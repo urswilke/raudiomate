@@ -12,7 +12,7 @@ test_that("output of synthesized wav file & mp3 conversion correct", {
 
   withr::with_file(c(wavfile, mp3file), {
     testthat::expect_snapshot_output({
-      testthat::skip_on_ci()
+      # testthat::skip_on_ci()
       synthesize_midi(midifile, wavfile, verbose = TRUE)
     })
     testthat::expect_snapshot_output({
