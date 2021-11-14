@@ -1,5 +1,5 @@
 Package: raudiomate
-Title: Helper functions to generate audio from midifiles and play them. 
+Title: Helper functions to generate audio from midifiles and play them
 Version: 0.0.0.9000
 Authors@R: 
     person("Urs", "Wilke", , "urs.wilke@gmail.com", role = c("aut", "cre"))
