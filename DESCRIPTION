@@ -18,4 +18,5 @@ BugReports: https://github.com/urswilke/raudiomate/issues
 Imports: 
     processx,
     htmltools,
-    magrittr
+    magrittr,
+    glue
