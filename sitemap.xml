@@ -3,4 +3,16 @@
   <url>
     <loc>https://urswilke.github.io/raudiomate/index.html</loc>
   </url>
+  <url>
+    <loc>https://urswilke.github.io/raudiomate/reference/convert_to_mp3.html</loc>
+  </url>
+  <url>
+    <loc>https://urswilke.github.io/raudiomate/reference/pipe.html</loc>
+  </url>
+  <url>
+    <loc>https://urswilke.github.io/raudiomate/reference/play_button.html</loc>
+  </url>
+  <url>
+    <loc>https://urswilke.github.io/raudiomate/reference/synthesize_midi.html</loc>
+  </url>
 </urlset>
