@@ -1,30 +1,22 @@
----
-output: github_document
----
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-
-```{r, include = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>",
-  fig.path = "man/figures/README-",
-  out.width = "100%",
-  eval=FALSE
-)
-```
 
 # raudiomate
 
 <!-- badges: start -->
-[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
-[![CRAN status](https://www.r-pkg.org/badges/version/raudiomate)](https://CRAN.R-project.org/package=raudiomate)
-[![Codecov test coverage](https://codecov.io/gh/urswilke/raudiomate/branch/master/graph/badge.svg)](https://app.codecov.io/gh/urswilke/raudiomate?branch=master)
+
+[![Lifecycle:
+experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+[![CRAN
+status](https://www.r-pkg.org/badges/version/raudiomate)](https://CRAN.R-project.org/package=raudiomate)
+[![Codecov test
+coverage](https://codecov.io/gh/urswilke/raudiomate/branch/master/graph/badge.svg)](https://app.codecov.io/gh/urswilke/raudiomate?branch=master)
 [![R-CMD-check](https://github.com/urswilke/raudiomate/workflows/R-CMD-check/badge.svg)](https://github.com/urswilke/raudiomate/actions)
 <!-- badges: end -->
 
-The goal of raudiomate is to provide helper functions to generate wav audio files from 
-midi files, convert them to mp3, and play these audio files in rmarkdown html documents. 
+The goal of raudiomate is to provide helper functions to generate wav
+audio files from midi files, convert them to mp3, and play these audio
+files in rmarkdown html documents.
 
 ## Installation
 
@@ -36,14 +28,17 @@ remotes::install_github("urswilke/raudiomate")
 
 Further dependencies:
 
-* For `synthesize_midi()` to work, you need [fluidsynth](https://www.fluidsynth.org/) installed.
-* For `convert_to_mp3()` you need [ffmpeg](https://www.ffmpeg.org/) (installed by default on ubuntu).
+-   For `synthesize_midi()` to work, you need
+    [fluidsynth](https://www.fluidsynth.org/) installed.
+-   For `convert_to_mp3()` you need [ffmpeg](https://www.ffmpeg.org/)
+    (installed by default on ubuntu).
 
 ## Example
 
-This is a basic example how you can apply the functions. We'll use the midifile included in the package:
+This is a basic example how you can apply the functions. We’ll use the
+midifile included in the package:
 
-```{r load}
+``` r
 library(raudiomate)
 
 midifile <- system.file("extdata", "test_midi_file.mid", package = "pyramidi")
@@ -52,7 +47,7 @@ audiofile <- "test.wav"
 
 ### Synthesize a midi file
 
-```{r synth}
+``` r
 synthesize_midi(midifile, audiofile, verbose = TRUE)
 #> FluidSynth runtime version 2.1.1
 #> Copyright (C) 2000-2020 Peter Hanappe and others.
@@ -63,7 +58,8 @@ synthesize_midi(midifile, audiofile, verbose = TRUE)
 ```
 
 ### Convert wav to mp3
-```{r wav2mp3}
+
+``` r
 convert_to_mp3(audiofile, verbose = TRUE)
 #> ffmpeg version 4.2.4-1ubuntu0.1 Copyright (c) 2000-2020 the FFmpeg developers
 #>   built with gcc 9 (Ubuntu 9.3.0-10ubuntu2)
@@ -95,12 +91,10 @@ convert_to_mp3(audiofile, verbose = TRUE)
 #> size=     168kB time=00:00:10.68 bitrate= 128.5kbits/s speed=34.6x    
 #> video:0kB audio:167kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.147640%
 #> generated test.mp3
-
 ```
 
 ### Play a file
 
-```{r play}
+``` r
 audiofile %>% play_button()
 ```
-
