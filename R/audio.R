@@ -7,6 +7,7 @@
 #' @param audiofile path to audio wav file (character string)
 #' @param midifile path to midi file path (character string)
 #' @param soundfont path to sf2 sound font (character string)
+#' @param verbose logical whether to print fluidsynth command line output; defaults to FALSE
 #'
 #' @export
 #'
@@ -16,19 +17,19 @@
 #' audiofile <- "test.wav"
 #' synthesize_midi(midifile, audiofile)
 #' }
-synthesize_midi <- function(midifile, audiofile, soundfont = NULL) {
-  system(
-    paste(
-      c(
-        "fluidsynth",
-        soundfont,
-        "-F",
-        audiofile,
-        midifile
-      ),
-      collapse = " "
+synthesize_midi <- function(midifile, audiofile, soundfont = NULL, verbose = FALSE) {
+  cmd_res <- processx::run(
+    "fluidsynth",
+    args = c(
+      soundfont,
+      "-F",
+      audiofile,
+      midifile
     )
   )
+  if (verbose) {
+    cat(cmd_res$stdout)
+  }
 }
 
 
@@ -37,6 +38,7 @@ synthesize_midi <- function(midifile, audiofile, soundfont = NULL) {
 #' Needs lame installed
 #'
 #' @param wav_filename wav filename
+#' @param verbose logical if to print ffmpeg conversion console output; defaults to FALSE
 #'
 #' @export
 #'
@@ -47,16 +49,21 @@ synthesize_midi <- function(midifile, audiofile, soundfont = NULL) {
 #' synthesize_midi(midifile, audiofile)
 #' convert_to_mp3(audiofile)
 #' }
-convert_to_mp3 <- function(wav_filename) {
+convert_to_mp3 <- function(wav_filename, verbose = FALSE) {
   mp3_filename <- gsub("wav", "mp3", wav_filename)
-
   cmd_res <- processx::run(
-    "lame",
-    wav_filename,
-    mp3_filename,
+    "ffmpeg",
+    args = c(
+      "-i",
+      wav_filename,
+      mp3_filename
+    )
   )
-  if (!cmd_res$status != 0) {
+  if (cmd_res$status != 0) {
     stop("mp3 conversion didn't work")
+  }
+  if (verbose) {
+    cat(cmd_res$stderr)
   }
   message("generated ", mp3_filename)
 }

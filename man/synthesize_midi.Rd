@@ -4,7 +4,7 @@
 \alias{synthesize_midi}
 \title{Synthesize midi file}
 \usage{
-synthesize_midi(midifile, audiofile, soundfont = NULL)
+synthesize_midi(midifile, audiofile, soundfont = NULL, verbose = FALSE)
 }
 \arguments{
 \item{midifile}{path to midi file path (character string)}
@@ -12,6 +12,8 @@ synthesize_midi(midifile, audiofile, soundfont = NULL)
 \item{audiofile}{path to audio wav file (character string)}
 
 \item{soundfont}{path to sf2 sound font (character string)}
+
+\item{verbose}{logical whether to print fluidsynth command line output; defaults to FALSE}
 }
 \description{
 Generates a wav \code{audiofile} from a \code{midifile} using the \code{soundfont} if specified

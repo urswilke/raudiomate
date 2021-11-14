@@ -4,10 +4,12 @@
 \alias{convert_to_mp3}
 \title{Convert wav to mp3}
 \usage{
-convert_to_mp3(wav_filename)
+convert_to_mp3(wav_filename, verbose = FALSE)
 }
 \arguments{
 \item{wav_filename}{wav filename}
+
+\item{verbose}{logical if to print ffmpeg conversion console output; defaults to FALSE}
 }
 \description{
 Needs lame installed
