@@ -97,3 +97,126 @@ convert_to_mp3(audiofile, verbose = TRUE)
 ``` r
 audiofile %>% play_button()
 ```
+
+<!-- 
+The following as well as the bibtex file "pkg-refs.bib" were automatically
+created with the commands:
+library(grateful)
+pkgs <- scan_packages()
+# don't know why including "R" gives an error ??
+pkgs <- pkgs[!pkgs %in% c("raudiomate")]
+cites <- get_citations(pkgs)
+rmd <- create_rmd(cites)
+
+-> then copy the list in the created refs.Rmd below
+
+-->
+
+## R packages used
+
+This package stands on the shoulders of giants. A big thank you to the
+authors of the following libraries!
+
+-   base (R Core Team 2021)
+-   pkgdown (Wickham and Hesselberth 2020)
+-   processx (Csárdi and Chang 2021)
+-   htmltools (Cheng et al. 2021)
+-   magrittr (Bache and Wickham 2020)
+-   glue (Hester 2021)
+-   withr (Hester et al. 2021)
+-   covr (Hester 2020)
+-   knitr (Xie 2014)
+-   rmarkdown (Xie, Dervieux, and Riederer 2020)
+-   testthat (Wickham 2011)
+
+## References
+
+<div id="refs" class="references csl-bib-body hanging-indent">
+
+<div id="ref-magrittr" class="csl-entry">
+
+Bache, Stefan Milton, and Hadley Wickham. 2020. *Magrittr: A
+Forward-Pipe Operator for r*.
+<https://CRAN.R-project.org/package=magrittr>.
+
+</div>
+
+<div id="ref-htmltools" class="csl-entry">
+
+Cheng, Joe, Carson Sievert, Barret Schloerke, Winston Chang, Yihui Xie,
+and Jeff Allen. 2021. *Htmltools: Tools for HTML*.
+<https://CRAN.R-project.org/package=htmltools>.
+
+</div>
+
+<div id="ref-processx" class="csl-entry">
+
+Csárdi, Gábor, and Winston Chang. 2021. *Processx: Execute and Control
+System Processes*. <https://CRAN.R-project.org/package=processx>.
+
+</div>
+
+<div id="ref-covr" class="csl-entry">
+
+Hester, Jim. 2020. *Covr: Test Coverage for Packages*.
+<https://CRAN.R-project.org/package=covr>.
+
+</div>
+
+<div id="ref-glue" class="csl-entry">
+
+———. 2021. *Glue: Interpreted String Literals*.
+<https://CRAN.R-project.org/package=glue>.
+
+</div>
+
+<div id="ref-withr" class="csl-entry">
+
+Hester, Jim, Kirill Müller, Kevin Ushey, Hadley Wickham, and Winston
+Chang. 2021. *Withr: Run Code ’with’ Temporarily Modified Global State*.
+<https://CRAN.R-project.org/package=withr>.
+
+</div>
+
+<div id="ref-base" class="csl-entry">
+
+R Core Team. 2021. *R: A Language and Environment for Statistical
+Computing*. Vienna, Austria: R Foundation for Statistical Computing.
+<https://www.R-project.org/>.
+
+</div>
+
+<div id="ref-testthat" class="csl-entry">
+
+Wickham, Hadley. 2011. “Testthat: Get Started with Testing.” *The R
+Journal* 3: 5–10.
+<https://journal.r-project.org/archive/2011-1/RJournal_2011-1_Wickham.pdf>.
+
+</div>
+
+<div id="ref-pkgdown" class="csl-entry">
+
+Wickham, Hadley, and Jay Hesselberth. 2020. *Pkgdown: Make Static HTML
+Documentation for a Package*.
+<https://CRAN.R-project.org/package=pkgdown>.
+
+</div>
+
+<div id="ref-knitr" class="csl-entry">
+
+Xie, Yihui. 2014. “Knitr: A Comprehensive Tool for Reproducible Research
+in R.” In *Implementing Reproducible Computational Research*, edited by
+Victoria Stodden, Friedrich Leisch, and Roger D. Peng. Chapman;
+Hall/CRC. <http://www.crcpress.com/product/isbn/9781466561595>.
+
+</div>
+
+<div id="ref-rmarkdown" class="csl-entry">
+
+Xie, Yihui, Christophe Dervieux, and Emily Riederer. 2020. *R Markdown
+Cookbook*. Boca Raton, Florida: Chapman; Hall/CRC.
+<https://bookdown.org/yihui/rmarkdown-cookbook>.
+
+</div>
+
+</div>

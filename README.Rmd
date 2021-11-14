@@ -1,5 +1,6 @@
 ---
 output: github_document
+bibliography: pkg-refs.bib
 ---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
@@ -104,3 +105,36 @@ convert_to_mp3(audiofile, verbose = TRUE)
 audiofile %>% play_button()
 ```
 
+
+
+<!-- 
+The following as well as the bibtex file "pkg-refs.bib" were automatically
+created with the commands:
+library(grateful)
+pkgs <- scan_packages()
+# don't know why including "R" gives an error ??
+pkgs <- pkgs[!pkgs %in% c("raudiomate")]
+cites <- get_citations(pkgs)
+rmd <- create_rmd(cites)
+
+-> then copy the list in the created refs.Rmd below
+
+-->
+
+## R packages used
+
+This package stands on the shoulders of giants. A big thank you to the authors of the following libraries!
+
+- base [@base]
+- pkgdown [@pkgdown]
+- processx [@processx]
+- htmltools [@htmltools]
+- magrittr [@magrittr]
+- glue [@glue]
+- withr [@withr]
+- covr [@covr]
+- knitr [@knitr]
+- rmarkdown [@rmarkdown]
+- testthat [@testthat]
+
+## References
