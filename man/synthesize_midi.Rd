@@ -7,17 +7,16 @@
 synthesize_midi(midifile, audiofile, soundfont = NULL)
 }
 \arguments{
-\item{midifile}{midi file path}
+\item{midifile}{path to midi file path (character string)}
 
-\item{audiofile}{audio wav file}
+\item{audiofile}{path to audio wav file (character string)}
 
-\item{soundfont}{path to sf2 sound font}
-}
-\value{
-
+\item{soundfont}{path to sf2 sound font (character string)}
 }
 \description{
-Needs fluidsynth installed; no idea how this works on windows.
+Generates a wav \code{audiofile} from a \code{midifile} using the \code{soundfont} if specified
+(otherwise fluidsynth's default soundfont is used). Needs fluidsynth
+installed; no idea how this works on windows.
 }
 \examples{
 \dontrun{

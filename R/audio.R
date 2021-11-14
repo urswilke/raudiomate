@@ -1,12 +1,13 @@
 #' Synthesize midi file
 #'
-#' Needs fluidsynth installed; no idea how this works on windows.
+#' Generates a wav \code{audiofile} from a \code{midifile} using the \code{soundfont} if specified
+#' (otherwise fluidsynth's default soundfont is used). Needs fluidsynth
+#' installed; no idea how this works on windows.
 #'
-#' @param audiofile audio wav file
-#' @param midifile midi file path
-#' @param soundfont path to sf2 sound font
+#' @param audiofile path to audio wav file (character string)
+#' @param midifile path to midi file path (character string)
+#' @param soundfont path to sf2 sound font (character string)
 #'
-#' @return
 #' @export
 #'
 #' @examples
@@ -65,11 +66,10 @@ convert_to_mp3 <- function(wav_filename) {
 #' Transform the midi file to fileext format and provide a play button for html
 #' documents.
 #'
-#' @param mfr r_midi_frames object
 #' @param audiofile audiofile
 #' @param fileext file extension
 #'
-#' @return
+#' @return html tag of a playbutton
 #' @export
 #'
 #' @examples

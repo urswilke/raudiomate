@@ -10,11 +10,9 @@ play_button(audiofile, fileext = "wav")
 \item{audiofile}{audiofile}
 
 \item{fileext}{file extension}
-
-\item{mfr}{r_midi_frames object}
 }
 \value{
-
+html tag of a playbutton
 }
 \description{
 Transform the midi file to fileext format and provide a play button for html
