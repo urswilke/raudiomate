@@ -101,6 +101,9 @@ audiofile %>% play_button()
 <audio controls="">
 <source src="https://urswilke.github.io/raudiomate/articles/test.mp3" type="audio/mp3"/>
 </audio>
+
+<br/>
+
 <!-- 
 The following as well as the bibtex file "pkg-refs.bib" were automatically
 created with the commands:
