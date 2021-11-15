@@ -105,6 +105,15 @@ convert_to_mp3(audiofile, verbose = TRUE)
 audiofile %>% play_button()
 ```
 
+```{r echo=FALSE, eval=TRUE}
+htmltools::tags$audio(
+    controls = "",
+    htmltools::tags$source(
+      src = "https://urswilke.github.io/raudiomate/articles/test.mp3",
+      type = "audio/mp3"
+    )
+  )
+```
 
 
 <!-- 
