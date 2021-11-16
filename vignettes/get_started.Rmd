@@ -78,6 +78,6 @@ convert_to_mp3(audiofile, verbose = TRUE)
 ### Play a file
 
 ```{r play, eval=TRUE}
-mp3file %>% play_button()
+mp3file %>% player()
 ```
 

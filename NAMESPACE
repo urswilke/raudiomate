@@ -2,6 +2,6 @@
 
 export("%>%")
 export(convert_to_mp3)
-export(play_button)
+export(player)
 export(synthesize_midi)
 importFrom(magrittr,"%>%")

@@ -84,9 +84,9 @@ convert_to_mp3 <- function(wav_filename, verbose = FALSE) {
 #' audiofile <- "test.wav"
 #' synthesize_midi(midifile, audiofile)
 #' convert_to_mp3(audiofile)
-#' audiofile %>% play_button()
+#' audiofile %>% player()
 #' }
-play_button <- function(
+player <- function(
   audiofile,
   fileext = "wav"
 ) {

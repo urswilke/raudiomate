@@ -3,7 +3,7 @@ wavfile <- "test.wav"
 mp3file <- "test.mp3"
 
 test_that("html tag output works", {
-    expect_snapshot(wavfile %>% play_button())
+    expect_snapshot(wavfile %>% player())
 })
 
 
