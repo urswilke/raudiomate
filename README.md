@@ -15,8 +15,10 @@ coverage](https://codecov.io/gh/urswilke/raudiomate/branch/master/graph/badge.sv
 <!-- badges: end -->
 
 The goal of raudiomate is to provide helper functions to generate wav
-audio files from midi files, convert them to mp3, and play these audio
-files in rmarkdown html documents.
+audio files from midi files (with
+[fluidsynth](https://www.fluidsynth.org/)), convert them to mp3 (with
+[ffmpeg](https://www.ffmpeg.org/)), and play these audio files in
+rmarkdown html documents.
 
 ## Installation
 
