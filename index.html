@@ -83,7 +83,7 @@
 <a href="#raudiomate" class="anchor"></a>raudiomate</h1></div>
 <!-- badges: start -->
 
-<p>The goal of raudiomate is to provide helper functions to generate wav audio files from midi files, convert them to mp3, and play these audio files in rmarkdown html documents.</p>
+<p>The goal of raudiomate is to provide helper functions to generate wav audio files from midi files (with <a href="https://www.fluidsynth.org/">fluidsynth</a>), convert them to mp3 (with <a href="https://www.ffmpeg.org/">ffmpeg</a>), and play these audio files in rmarkdown html documents.</p>
 <div id="installation" class="section level2">
 <h2 class="hasAnchor">
 <a href="#installation" class="anchor"></a>Installation</h2>
@@ -157,7 +157,7 @@
 <h3 class="hasAnchor">
 <a href="#play-a-file" class="anchor"></a>Play a file</h3>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">audiofile</span> <span class="op"><a href="reference/%&gt;%.html">%&gt;%</a></span> <span class="fu"><a href="reference/play_button.html">play_button</a></span><span class="op">(</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span class="va">audiofile</span> <span class="op"><a href="reference/%&gt;%.html">%&gt;%</a></span> <span class="fu"><a href="reference/player.html">player</a></span><span class="op">(</span><span class="op">)</span></code></pre></div>
 <audio controls=""><source src="https://urswilke.github.io/raudiomate/articles/test.mp3" type="audio/mp3"></source></audio><p><br></p>
 <!-- 
 The following as well as the bibtex file "pkg-refs.bib" were automatically
