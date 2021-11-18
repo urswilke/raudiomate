@@ -1,6 +1,6 @@
 Package: raudiomate
 Title: Helper functions to generate audio from midifiles and play them
-Version: 0.0.0.9000
+Version: 0.0.1
 Authors@R: 
     person("Urs", "Wilke", , "urs.wilke@gmail.com", role = c("aut", "cre"))
 Description: Transform midi files to wav and mp3 and provide html tags to play them in rmarkdown html_documents.
