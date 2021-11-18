@@ -14,6 +14,9 @@ Config/testthat/edition: 3
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.2
+SystemRequirements: 
+    fluidsynth,
+    ffmpeg
 URL: https://github.com/urswilke/raudiomate,
     https://urswilke.github.io/raudiomate
 BugReports: https://github.com/urswilke/raudiomate/issues
