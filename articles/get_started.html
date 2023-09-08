@@ -4,181 +4,167 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="raudiomate">
 <title>Get started • raudiomate</title>
-<!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><!-- Bootstrap --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script><!-- bootstrap-toc --><link rel="stylesheet" href="../bootstrap-toc.css">
-<script src="../bootstrap-toc.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
+<script src="../deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="../deps/bootstrap-5.2.2/bootstrap.min.css" rel="stylesheet">
+<script src="../deps/bootstrap-5.2.2/bootstrap.bundle.min.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
-<!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="../pkgdown.css" rel="stylesheet">
-<script src="../pkgdown.js"></script><meta property="og:title" content="Get started">
+<!-- bootstrap-toc --><script src="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@v1.0.1/dist/bootstrap-toc.min.js" integrity="sha256-4veVQbu7//Lk5TSmc7YV48MxtMy98e26cf5MrgZYnwo=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- search --><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- pkgdown --><script src="../pkgdown.js"></script><meta property="og:title" content="Get started">
 <meta property="og:description" content="raudiomate">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 </head>
-<body data-spy="scroll" data-target="#toc">
-    <div class="container template-article">
-      <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <span class="navbar-brand">
-        <a class="navbar-link" href="../index.html">raudiomate</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.1</span>
-      </span>
-    </div>
+<body>
+    <a href="#main" class="visually-hidden-focusable">Skip to contents</a>
+    
 
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-<li>
-  <a href="../index.html">
-    <span class="fas fa-home fa-lg"></span>
-     
-  </a>
+    <nav class="navbar fixed-top navbar-light navbar-expand-lg bg-light"><div class="container">
+    
+    <a class="navbar-brand me-2" href="../index.html">raudiomate</a>
+
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.0.1</small>
+
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="navbar" class="collapse navbar-collapse ms-3">
+      <ul class="navbar-nav me-auto">
+<li class="nav-item">
+  <a class="nav-link" href="../reference/index.html">Reference</a>
 </li>
-<li>
-  <a href="../reference/index.html">Reference</a>
-</li>
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Articles
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-<li>
-      <a href="../articles/get_started.html">Get started</a>
-    </li>
-  </ul>
-</li>
-      </ul>
-<ul class="nav navbar-nav navbar-right">
-<li>
-  <a href="https://github.com/urswilke/raudiomate/">
-    <span class="fab fa-github fa-lg"></span>
-     
-  </a>
-</li>
-      </ul>
-</div>
-<!--/.nav-collapse -->
+<li class="active nav-item dropdown">
+  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" id="dropdown-articles">Articles</a>
+  <div class="dropdown-menu" aria-labelledby="dropdown-articles">
+    <a class="dropdown-item" href="../articles/get_started.html">Get started</a>
   </div>
-<!--/.container -->
+</li>
+      </ul>
+<form class="form-inline my-2 my-lg-0" role="search">
+        <input type="search" class="form-control me-sm-2" aria-label="Toggle navigation" name="search-input" data-search-index="../search.json" id="search-input" placeholder="Search for" autocomplete="off">
+</form>
+
+      <ul class="navbar-nav">
+<li class="nav-item">
+  <a class="external-link nav-link" href="https://github.com/urswilke/raudiomate/" aria-label="github">
+    <span class="fab fa fab fa-github fa-lg"></span>
+     
+  </a>
+</li>
+      </ul>
 </div>
-<!--/.navbar -->
 
-      
+    
+  </div>
+</nav><div class="container template-article">
 
-      </header><script src="get_started_files/accessible-code-block-0.0.1/empty-anchor.js"></script><div class="row">
-  <div class="col-md-9 contents">
-    <div class="page-header toc-ignore">
-      <h1 data-toc-skip>Get started</h1>
+
+
+
+<div class="row">
+  <main id="main" class="col-md-9"><div class="page-header">
+      <img src="" class="logo" alt=""><h1>Get started</h1>
             
       
-      <small class="dont-index">Source: <a href="https://github.com/urswilke/raudiomate/blob/master/vignettes/get_started.Rmd"><code>vignettes/get_started.Rmd</code></a></small>
-      <div class="hidden name"><code>get_started.Rmd</code></div>
-
+      <small class="dont-index">Source: <a href="https://github.com/urswilke/raudiomate/blob/HEAD/vignettes/get_started.Rmd" class="external-link"><code>vignettes/get_started.Rmd</code></a></small>
+      <div class="d-none name"><code>get_started.Rmd</code></div>
     </div>
 
     
     
-<div id="example" class="section level2">
-<h2 class="hasAnchor">
-<a href="#example" class="anchor"></a>Example</h2>
-<p>This is a basic example how you can apply the functions. We’ll use the midifile included in the package:</p>
+<div class="section level2">
+<h2 id="example">Example<a class="anchor" aria-label="anchor" href="#example"></a>
+</h2>
+<p>This is a basic example how you can apply the functions. We’ll use
+the midifile included in the package:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/urswilke/raudiomate">raudiomate</a></span><span class="op">)</span>
-<span class="va">midifile</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/system.file.html">system.file</a></span><span class="op">(</span><span class="st">"extdata"</span>, <span class="st">"test_midi_file.mid"</span>, package <span class="op">=</span> <span class="st">"pyramidi"</span><span class="op">)</span>
-<span class="va">audiofile</span> <span class="op">&lt;-</span> <span class="st">"test.wav"</span>
-<span class="va">mp3file</span> <span class="op">&lt;-</span> <span class="st">"test.mp3"</span></code></pre></div>
-<div id="synthesize-a-midi-file" class="section level3">
-<h3 class="hasAnchor">
-<a href="#synthesize-a-midi-file" class="anchor"></a>Synthesize a midi file</h3>
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/urswilke/raudiomate" class="external-link">raudiomate</a></span><span class="op">)</span></span>
+<span><span class="va">midifile</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/system.file.html" class="external-link">system.file</a></span><span class="op">(</span><span class="st">"extdata"</span>, <span class="st">"test_midi_file.mid"</span>, package <span class="op">=</span> <span class="st">"pyramidi"</span><span class="op">)</span></span>
+<span><span class="va">audiofile</span> <span class="op">&lt;-</span> <span class="st">"test.wav"</span></span>
+<span><span class="va">mp3file</span> <span class="op">&lt;-</span> <span class="st">"test.mp3"</span></span></code></pre></div>
+<div class="section level3">
+<h3 id="synthesize-a-midi-file">Synthesize a midi file<a class="anchor" aria-label="anchor" href="#synthesize-a-midi-file"></a>
+</h3>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="../reference/synthesize_midi.html">synthesize_midi</a></span><span class="op">(</span><span class="va">midifile</span>, <span class="va">audiofile</span>, verbose <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span>
-<span class="co">#&gt; FluidSynth runtime version 2.1.1</span>
-<span class="co">#&gt; Copyright (C) 2000-2020 Peter Hanappe and others.</span>
-<span class="co">#&gt; Distributed under the LGPL license.</span>
-<span class="co">#&gt; SoundFont(R) is a registered trademark of E-mu Systems, Inc.</span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; Rendering audio to file 'test.wav'..</span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu"><a href="../reference/synthesize_midi.html">synthesize_midi</a></span><span class="op">(</span><span class="va">midifile</span>, <span class="va">audiofile</span>, verbose <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
+<span><span class="co">#&gt; FluidSynth runtime version 2.1.1</span></span>
+<span><span class="co">#&gt; Copyright (C) 2000-2020 Peter Hanappe and others.</span></span>
+<span><span class="co">#&gt; Distributed under the LGPL license.</span></span>
+<span><span class="co">#&gt; SoundFont(R) is a registered trademark of E-mu Systems, Inc.</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; Rendering audio to file 'test.wav'..</span></span></code></pre></div>
 </div>
-<div id="convert-wav-to-mp3" class="section level3">
-<h3 class="hasAnchor">
-<a href="#convert-wav-to-mp3" class="anchor"></a>Convert wav to mp3</h3>
+<div class="section level3">
+<h3 id="convert-wav-to-mp3">Convert wav to mp3<a class="anchor" aria-label="anchor" href="#convert-wav-to-mp3"></a>
+</h3>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="../reference/convert_to_mp3.html">convert_to_mp3</a></span><span class="op">(</span><span class="va">audiofile</span>, verbose <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span>
-<span class="co">#&gt; ffmpeg version 4.2.4-1ubuntu0.1 Copyright (c) 2000-2020 the FFmpeg developers</span>
-<span class="co">#&gt;   built with gcc 9 (Ubuntu 9.3.0-10ubuntu2)</span>
-<span class="co">#&gt;   configuration: --prefix=/usr --extra-version=1ubuntu0.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-avresample --disable-filter=resample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librsvg --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-nvenc --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared</span>
-<span class="co">#&gt;   WARNING: library configuration mismatch</span>
-<span class="co">#&gt;   avcodec     configuration: --prefix=/usr --extra-version=1ubuntu0.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-avresample --disable-filter=resample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librsvg --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-nvenc --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared --enable-version3 --disable-doc --disable-programs --enable-libaribb24 --enable-liblensfun --enable-libopencore_amrnb --enable-libopencore_amrwb --enable-libtesseract --enable-libvo_amrwbenc</span>
-<span class="co">#&gt;   libavutil      56. 31.100 / 56. 31.100</span>
-<span class="co">#&gt;   libavcodec     58. 54.100 / 58. 54.100</span>
-<span class="co">#&gt;   libavformat    58. 29.100 / 58. 29.100</span>
-<span class="co">#&gt;   libavdevice    58.  8.100 / 58.  8.100</span>
-<span class="co">#&gt;   libavfilter     7. 57.100 /  7. 57.100</span>
-<span class="co">#&gt;   libavresample   4.  0.  0 /  4.  0.  0</span>
-<span class="co">#&gt;   libswscale      5.  5.100 /  5.  5.100</span>
-<span class="co">#&gt;   libswresample   3.  5.100 /  3.  5.100</span>
-<span class="co">#&gt;   libpostproc    55.  5.100 / 55.  5.100</span>
-<span class="co">#&gt; Guessed Channel Layout for Input Stream #0.0 : stereo</span>
-<span class="co">#&gt; Input #0, wav, from 'test.wav':</span>
-<span class="co">#&gt;   Duration: 00:00:10.67, bitrate: 1411 kb/s</span>
-<span class="co">#&gt;     Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 44100 Hz, stereo, s16, 1411 kb/s</span>
-<span class="co">#&gt; Stream mapping:</span>
-<span class="co">#&gt;   Stream #0:0 -&gt; #0:0 (pcm_s16le (native) -&gt; mp3 (libmp3lame))</span>
-<span class="co">#&gt; Press [q] to stop, [?] for help</span>
-<span class="co">#&gt; Output #0, mp3, to 'test.mp3':</span>
-<span class="co">#&gt;   Metadata:</span>
-<span class="co">#&gt;     TSSE            : Lavf58.29.100</span>
-<span class="co">#&gt;     Stream #0:0: Audio: mp3 (libmp3lame), 44100 Hz, stereo, s16p</span>
-<span class="co">#&gt;     Metadata:</span>
-<span class="co">#&gt;       encoder         : Lavc58.54.100 libmp3lame</span>
-<span class="co">#&gt; size=     168kB time=00:00:10.68 bitrate= 128.5kbits/s speed=34.6x    </span>
-<span class="co">#&gt; video:0kB audio:167kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.147640%</span>
-<span class="co">#&gt; generated test.mp3</span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu"><a href="../reference/convert_to_mp3.html">convert_to_mp3</a></span><span class="op">(</span><span class="va">audiofile</span>, verbose <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
+<span><span class="co">#&gt; ffmpeg version 4.2.4-1ubuntu0.1 Copyright (c) 2000-2020 the FFmpeg developers</span></span>
+<span><span class="co">#&gt;   built with gcc 9 (Ubuntu 9.3.0-10ubuntu2)</span></span>
+<span><span class="co">#&gt;   configuration: --prefix=/usr --extra-version=1ubuntu0.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-avresample --disable-filter=resample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librsvg --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-nvenc --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared</span></span>
+<span><span class="co">#&gt;   WARNING: library configuration mismatch</span></span>
+<span><span class="co">#&gt;   avcodec     configuration: --prefix=/usr --extra-version=1ubuntu0.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-avresample --disable-filter=resample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librsvg --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-nvenc --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared --enable-version3 --disable-doc --disable-programs --enable-libaribb24 --enable-liblensfun --enable-libopencore_amrnb --enable-libopencore_amrwb --enable-libtesseract --enable-libvo_amrwbenc</span></span>
+<span><span class="co">#&gt;   libavutil      56. 31.100 / 56. 31.100</span></span>
+<span><span class="co">#&gt;   libavcodec     58. 54.100 / 58. 54.100</span></span>
+<span><span class="co">#&gt;   libavformat    58. 29.100 / 58. 29.100</span></span>
+<span><span class="co">#&gt;   libavdevice    58.  8.100 / 58.  8.100</span></span>
+<span><span class="co">#&gt;   libavfilter     7. 57.100 /  7. 57.100</span></span>
+<span><span class="co">#&gt;   libavresample   4.  0.  0 /  4.  0.  0</span></span>
+<span><span class="co">#&gt;   libswscale      5.  5.100 /  5.  5.100</span></span>
+<span><span class="co">#&gt;   libswresample   3.  5.100 /  3.  5.100</span></span>
+<span><span class="co">#&gt;   libpostproc    55.  5.100 / 55.  5.100</span></span>
+<span><span class="co">#&gt; Guessed Channel Layout for Input Stream #0.0 : stereo</span></span>
+<span><span class="co">#&gt; Input #0, wav, from 'test.wav':</span></span>
+<span><span class="co">#&gt;   Duration: 00:00:10.67, bitrate: 1411 kb/s</span></span>
+<span><span class="co">#&gt;     Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 44100 Hz, stereo, s16, 1411 kb/s</span></span>
+<span><span class="co">#&gt; Stream mapping:</span></span>
+<span><span class="co">#&gt;   Stream #0:0 -&gt; #0:0 (pcm_s16le (native) -&gt; mp3 (libmp3lame))</span></span>
+<span><span class="co">#&gt; Press [q] to stop, [?] for help</span></span>
+<span><span class="co">#&gt; Output #0, mp3, to 'test.mp3':</span></span>
+<span><span class="co">#&gt;   Metadata:</span></span>
+<span><span class="co">#&gt;     TSSE            : Lavf58.29.100</span></span>
+<span><span class="co">#&gt;     Stream #0:0: Audio: mp3 (libmp3lame), 44100 Hz, stereo, s16p</span></span>
+<span><span class="co">#&gt;     Metadata:</span></span>
+<span><span class="co">#&gt;       encoder         : Lavc58.54.100 libmp3lame</span></span>
+<span><span class="co">#&gt; size=     168kB time=00:00:10.68 bitrate= 128.5kbits/s speed=34.6x    </span></span>
+<span><span class="co">#&gt; video:0kB audio:167kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.147640%</span></span>
+<span><span class="co">#&gt; generated test.mp3</span></span></code></pre></div>
 </div>
-<div id="play-a-file" class="section level3">
-<h3 class="hasAnchor">
-<a href="#play-a-file" class="anchor"></a>Play a file</h3>
+<div class="section level3">
+<h3 id="play-a-file">Play a file<a class="anchor" aria-label="anchor" href="#play-a-file"></a>
+</h3>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">mp3file</span> <span class="op"><a href="../reference/%&gt;%.html">%&gt;%</a></span> <span class="fu"><a href="../reference/player.html">player</a></span><span class="op">(</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="va">mp3file</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span> <span class="fu"><a href="../reference/player.html">player</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 <audio controls=""><source src="test.mp3" type="audio/wav"></source></audio>
 </div>
 </div>
-  </div>
-
-  <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
-
-        <nav id="toc" data-toggle="toc"><h2 data-toc-skip>Contents</h2>
-    </nav>
-</div>
-
+  </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>
+    </nav></aside>
 </div>
 
 
 
-      <footer><div class="copyright">
-  <p>Developed by Urs Wilke.</p>
+    <footer><div class="pkgdown-footer-left">
+  <p></p>
+<p>Developed by Urs Wilke.</p>
 </div>
 
-<div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
+<div class="pkgdown-footer-right">
+  <p></p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.7.</p>
 </div>
 
-      </footer>
+    </footer>
 </div>
 
   
 
+  
 
   </body>
 </html>
