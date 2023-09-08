@@ -53,22 +53,6 @@ jobs:
           use-public-rspm: true
 
       - uses: r-lib/actions/setup-r-dependencies@v2
-      - name:  Install fluidsynth & ffmpeg
-        run: |
-          if [ "$RUNNER_OS" == "Linux" ]; then
-            sudo apt-get install -y fluidsynth
-            sudo apt-get install -y ffmpeg
-          elif [ "$RUNNER_OS" == "macOS" ]; then
-            brew install fluidsynth
-            brew install ffmpeg
-          elif [ "$RUNNER_OS" == "Windows" ]; then
-            choco install fluidsynth
-            choco install ffmpeg
-          else
-            echo "$RUNNER_OS not supported"
-            exit 1
-          fi
-        shell: bash
         with:
           extra-packages: any::rcmdcheck
           needs: check

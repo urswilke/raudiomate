@@ -7,7 +7,7 @@ test_that("html tag output works", {
 })
 
 
-
+testthat::skip_on_ci()
 test_that("output of synthesized wav file & mp3 conversion correct", {
 
   withr::with_file(c(wavfile, mp3file), {
