@@ -1,2 +1,4 @@
-url: https://urswilke.github.io/raudiomate
+url: ~
+template:
+  bootstrap: 5
 
