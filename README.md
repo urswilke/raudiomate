@@ -12,6 +12,7 @@ status](https://www.r-pkg.org/badges/version/raudiomate)](https://CRAN.R-project
 [![Codecov test
 coverage](https://codecov.io/gh/urswilke/raudiomate/branch/master/graph/badge.svg)](https://app.codecov.io/gh/urswilke/raudiomate?branch=master)
 [![R-CMD-check](https://github.com/urswilke/raudiomate/workflows/R-CMD-check/badge.svg)](https://github.com/urswilke/raudiomate/actions)
+[![R-CMD-check](https://github.com/urswilke/raudiomate/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/urswilke/raudiomate/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 The goal of raudiomate is to provide helper functions to generate wav
