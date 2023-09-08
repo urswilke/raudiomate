@@ -30,9 +30,9 @@ remotes::install_github("urswilke/raudiomate")
 
 Further dependencies:
 
--   For `synthesize_midi()` to work, you need
-    [fluidsynth](https://www.fluidsynth.org/) installed.
--   For `convert_to_mp3()` you need [ffmpeg](https://www.ffmpeg.org/).
+- For `synthesize_midi()` to work, you need
+  [fluidsynth](https://www.fluidsynth.org/) installed.
+- For `convert_to_mp3()` you need [ffmpeg](https://www.ffmpeg.org/).
 
 ## Example
 
@@ -103,9 +103,7 @@ audiofile %>% player()
 <audio controls="">
 <source src="https://urswilke.github.io/raudiomate/articles/test.mp3" type="audio/mp3"/>
 </audio>
-
 <br/>
-
 <!-- 
 The following as well as the bibtex file "pkg-refs.bib" were automatically
 created with the commands:
@@ -115,27 +113,25 @@ pkgs <- scan_packages()
 pkgs <- pkgs[!pkgs %in% c("raudiomate")]
 cites <- get_citations(pkgs)
 rmd <- create_rmd(cites)
-
--> then copy the list in the created refs.Rmd below
-
--->
+&#10;-> then copy the list in the created refs.Rmd below
+&#10;-->
 
 ## R packages used
 
 This package stands on the shoulders of giants. A big thank you to the
 authors of the following libraries!
 
--   base (R Core Team 2021)
--   pkgdown (Wickham and Hesselberth 2020)
--   processx (Csárdi and Chang 2021)
--   htmltools (Cheng et al. 2021)
--   magrittr (Bache and Wickham 2020)
--   glue (Hester 2021)
--   withr (Hester et al. 2021)
--   covr (Hester 2020)
--   knitr (Xie 2014)
--   rmarkdown (Xie, Dervieux, and Riederer 2020)
--   testthat (Wickham 2011)
+- base (R Core Team 2021)
+- pkgdown (Wickham and Hesselberth 2020)
+- processx (Csárdi and Chang 2021)
+- htmltools (Cheng et al. 2021)
+- magrittr (Bache and Wickham 2020)
+- glue (Hester 2021)
+- withr (Hester et al. 2021)
+- covr (Hester 2020)
+- knitr (Xie 2014)
+- rmarkdown (Xie, Dervieux, and Riederer 2020)
+- testthat (Wickham 2011)
 
 ## References
 
