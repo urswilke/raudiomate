@@ -59,6 +59,17 @@ synthesize_midi(midifile, audiofile, verbose = TRUE)
 #> Rendering audio to file 'test.wav'..
 ```
 
+I have tested this only on my machine (Arch Linux). I had to create a
+file (or a symbolic link) at `/usr/share/soundfonts/default.sf2` in my
+file system (as explained
+[here](https://wiki.archlinux.org/title/FluidSynth#Usage); otherwise you
+can also specify the path in the `soundfont` argument in
+`synthesize_midi()`):
+
+``` bash
+ln -s /path/to/soundfont.sf2 /usr/share/soundfonts/default.sf2
+```
+
 ### Convert wav to mp3
 
 ``` r
